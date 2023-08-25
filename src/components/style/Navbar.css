@@ -1,0 +1,188 @@
+
+.navbar-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  background-color: #94DA89;
+  transition: background-color 0.3s ease, height 0.3s ease; /* Add transition for height change */
+
+}
+
+.navbar img {
+  height: 5rem;
+}
+
+.bars {
+  border: 2px solid rgba(128, 128, 128);
+  padding: 5px 15px;
+  border-radius: 5px;
+  color: rgba(128, 128, 128);
+}
+
+
+.nav-background li {
+  margin: 0 3rem;
+  font-weight: 700;
+}
+
+
+li {
+  position: relative;
+}
+
+
+li a {
+  color: #fff;
+  text-decoration: none;
+  display: inline-block; 
+  padding-bottom: 8px;
+}
+
+li a::after {
+  content: "";
+  display: block;
+  position: absolute;
+  font-weight: 800;
+  height: 3px;
+  width: 0;
+  background-color: #115f05;
+  bottom: 0; 
+  left: 0;
+  transition: width 0.2s ease;
+}
+
+li a:hover::after {
+  width: 75%;
+}
+
+li a.active::after {
+  width: 75%;
+}
+
+li a.active {
+  color: #115f05;
+  font-weight: bolder;
+}
+
+.logout button {
+  margin: 0.5rem;
+  border: none;
+  background-color: lightgray;
+  border-radius: 5px;
+  padding: 5px 15px;
+  font-weight: 600;
+
+}
+
+.logout button:hover {
+  margin: 0.5rem;
+  border: 1px solid white;
+  background-color: #115f05;
+  border-radius: 5px;
+  padding: 8px 20px;
+  font-weight: 600;
+  color: white;
+  
+}
+
+@media only screen and (min-width: 430px) and (max-width: 990px)
+{
+  .navbar-shrink {
+    height: 50px; /* Set the reduced height of the navbar when scrolling */
+  }
+  
+  .navbar img {
+    /* ... */
+    transition: opacity 0.3s ease; /* Add transition for logo opacity change */
+    opacity: 1; /* Initial opacity */
+  }
+  
+  .navbar-shrink img {
+    opacity: 0; /* Hide the logo when the navbar shrinks */
+  }
+  
+  .navbar-nav {
+    transition: margin-left 0.3s ease, width 0.3s ease, background-color 0.3s ease;
+    margin-left: 0; 
+  }
+  
+  .navbar-shrink .navbar-nav {
+    display: flex;
+    justify-content: left;
+    margin-left: -25px; /* Move the menu items to the left */
+    max-width: 10rem; /* Set the width of the menu */
+    background-color: #94DA89; /* Green background color */
+    height: 11rem;
+  }
+  
+  .navbar-shrink .navbar-nav li {
+    position: relative;
+    left: -5%; /* Move the menu items to the left */
+    width: 13vw;
+    background-color: #94DA89; /* Green background color */
+  }
+}
+
+@media only screen and (max-width: 430px)
+{
+ 
+  .navbar-shrink {
+    height: 50px; /* Set the reduced height of the navbar when scrolling */
+  }
+  
+  .navbar img {
+    /* ... */
+    transition: opacity 0.3s ease; /* Add transition for logo opacity change */
+    opacity: 1; /* Initial opacity */
+  }
+  
+  .navbar-shrink img {
+    opacity: 0; /* Hide the logo when the navbar shrinks */
+  }
+  
+  .navbar-nav {
+    transition: margin-left 0.3s ease, width 0.3s ease, background-color 0.3s ease;
+    margin-left: 0; 
+  }
+  
+  .navbar-shrink .navbar-nav {
+    display: flex;
+    justify-content: left;
+    margin-left: -25px; /* Move the menu items to the left */
+    max-width: 10rem; /* Set the width of the menu */
+    background-color: #94DA89; /* Green background color */
+    height: 11rem;
+  }
+  
+  .navbar-shrink .navbar-nav li {
+    position: relative;
+    left: -15%; /* Move the menu items to the left */
+    width: 18vw;
+    background-color: #94DA89; /* Green background color */
+  }
+
+  ul {
+    display: flex;
+    align-items: flex-start;
+    height:7vh;
+  }
+
+  .navbar-brand1 {
+    display: none;
+  }
+
+  .navbar-brand2 {
+    display: contents;
+  }
+
+
+  li a:hover::after {
+    width: 100%;
+  }
+  
+  li a.active::after {
+    width: 100%;
+  }
+}

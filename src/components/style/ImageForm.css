@@ -1,0 +1,81 @@
+.form-upload {
+    /* border: 1px solid blue; */
+    width: 35rem;
+    margin: auto;
+    padding-top: 20vh;
+
+    
+}
+
+.form-upload p {
+    text-align: center;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.form-upload .back-link {
+    color: black;
+    font-style: normal;
+    text-align: center;
+    width: 10rem;
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 5rem;
+}
+
+.form-upload a {
+    text-decoration: none;
+    border: 1px solid rgb(185, 182, 182);
+    padding: 5px 20px;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+.form-upload a:hover {
+    text-decoration: none;
+    border: 1px solid rgb(185, 182, 182);
+    padding: 5px 20px;
+    border-radius: 5px;
+    background-color: rgb(8, 114, 8);
+    color: white;
+    font-weight: 600;
+}
+
+.form-upload form {
+    /* border: 1px solid rgb(167, 163, 163); */
+    /* padding: 2rem; */
+    border-radius: 10px;
+
+}
+
+form label {
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+form input {
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    border: 1px solid rgb(184, 180, 180);
+    height: 2rem;
+}
+
+
+form button {
+    border: 1px solid rgb(196, 191, 191);
+    padding: 5px 20px;
+    border-radius: 5px;
+    background-color: white;
+
+}
+
+form button:hover {
+    border: 1px solid rgb(196, 191, 191);
+    padding: 5px 20px;
+    border-radius: 5px;
+    background-color: rgb(8, 114, 8);
+    color: white;
+    font-weight: 600;
+    
+}

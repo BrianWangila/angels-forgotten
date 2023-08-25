@@ -1,0 +1,76 @@
+.hero-image{
+  background-image: url("../assets/hero.jpeg");
+  height:80vh;
+  background-size: cover;
+  background-position: center;
+  margin-top: 70px;
+
+}
+
+.gallery-page {
+  text-align: center;
+  margin-top: 10vh;
+  margin-bottom: 5vh;
+  background-color: #E3F1D7;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+}
+
+.gallery-collection{
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 10px;
+ 
+}
+
+
+.rounded {
+  width: 100%;
+  height: auto;
+  border-radius: 8px; 
+}
+
+.full-description {
+  display: block;
+}
+
+.description {
+  display: none;
+}
+
+@media only screen and (max-width: 430px)
+{
+
+  .gallery-page h2 {
+    font-size: 20px;
+  }
+
+  .gallery-collection .image-description {
+    padding-top: 0;
+    cursor: pointer; /* Add cursor pointer to indicate clickable */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0.411);
+    color: #fff;
+    opacity: 0.8;
+    transition: opacity 0.3s;
+  }
+
+  .description {
+    display: block;
+    margin: 0;
+    z-index: 100;
+  }
+
+
+  .full-description {
+    margin: 0;
+    display: none;
+  }
+
+
+}
+

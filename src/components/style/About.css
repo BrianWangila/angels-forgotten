@@ -1,0 +1,164 @@
+
+.about-header {
+  background-color: black;
+  height: 45vh;
+  position: relative;
+  margin-top: 70px;
+}
+
+
+.about-text {
+  width: 50vw;
+  text-align: center;
+  margin: auto;
+  padding-top: 3vh;
+  
+}
+
+
+.about-text p {
+  font-size: 25px;
+  color: white;
+}
+
+
+.angels {
+  margin-left: 5vw;
+  margin-top: 5vh;
+
+}
+
+.mission-v {
+  display: flex;
+  margin-left: 5vw;
+  align-items: center;
+
+}
+
+
+.aboutus span {
+  color: #94DA89;
+}
+
+
+.mission {
+  /* width: 60vw; */
+  margin-top: 2vh;
+}
+
+
+.vis-mis  {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2vh;
+  margin-top: 2vh;
+
+}
+
+
+.vis-mis p {
+  margin-right: 38vw;
+}
+
+.arrow-line {
+  position: relative;
+  height: 100px; /* adjust to your desired height */
+  width: 0.5px; /* adjust to your desired width */
+  margin: 0 auto;
+  margin-right: 1rem;
+
+  border: 1px solid #94DA89;
+  /* transform: rotate(-90deg); */
+}
+
+.arrow-line::before,
+.arrow-line::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 0;
+  height: 0;
+  border: 5px solid transparent; /* adjust arrow size here */
+}
+
+.arrow-line::before {
+  top: -7px;
+  left: -5px; /* adjust arrow distance from line */
+  border-right-color: #94DA89; /* adjust arrow color */
+  transform: rotate(90deg);
+}
+
+.arrow-line::after {
+  top: 96px;
+  right: -5px; /* adjust arrow distance from line */
+  border-left-color: #94DA89; /* adjust arrow color */
+  transform: rotate(-270deg);
+}
+
+
+.history,
+.donor {
+  margin: 5vw;
+  width: 70vw;
+}
+
+.history p, 
+.donor p {
+  margin-top: 2vh;
+}
+
+
+
+@media only screen and (max-width: 430px)
+{
+  .about-text p {
+    font-size: 15px;
+    color: white;
+  }
+
+  .about-text {
+    width: 80vw;
+    padding-top: 7vh;
+    
+  }
+
+  .about-header {
+    height: 40vh;
+  }
+
+  .vis-mis  {
+    margin-left: 2vw;
+  
+  }
+  
+  .vis-mis p {
+    margin-right: 20vw;
+    margin-left: 2vw;
+  }
+
+  .angels img {
+    width: 8rem;
+    height: 8rem;
+    margin-left: -5rem;
+    margin-right: 20px;
+  }
+
+  .mission p {
+    font-size: 12px;
+
+  }
+
+  .aboutus h2 {
+    font-size: 20px;
+  }
+
+  .history p, .donor p {
+    font-size: 13px;
+  } 
+
+  .angels {
+    margin-left: 5vw;
+    margin-top: 5vh;
+  
+  }
+}

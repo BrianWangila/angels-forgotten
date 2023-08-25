@@ -1,0 +1,68 @@
+footer h2 {
+  text-align: center;
+  padding-bottom: 2vh;
+}
+footer {
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+}
+
+
+footer .icons {
+  display: flex;
+  justify-content: center;
+
+}
+
+.copyright {
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+footer .v-line {
+  margin-top: 1vh;
+  height: 15vh;
+  width: 2px;
+  background-color: grey;
+  margin-right: 3vw;
+  margin-left: 3vw;
+}
+
+footer .icons1 {
+  margin-left: -4vw;
+
+}
+
+footer img {
+  height: 25px;
+}
+
+footer .icons p {
+  padding-bottom: 7px;
+}
+
+
+@media only screen and (max-width: 430px)
+{
+  footer h2 {
+    font-size: 20px;
+  }
+
+  footer p {
+    font-size: 10px;
+  }
+
+  .icons img {
+    height: 15px;
+  }
+
+  footer .copyright {
+    position: relative;
+    bottom: 0px;
+  }
+
+  footer .footer-content {
+    height: 21rem;
+  }
+}
